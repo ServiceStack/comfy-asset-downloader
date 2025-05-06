@@ -1,0 +1,14 @@
+[project]
+name = "comfy-asset-downloader"
+description = ""
+version = "0.1"
+license = {file = "LICENSE"}
+
+[project.urls]
+Repository = "https://github.com/ServiceStack/comfy-asset-downloader"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = "ServiceStack"
+DisplayName = "comfy-asset-downloader"
+Icon = ""
