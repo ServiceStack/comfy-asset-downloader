@@ -10,7 +10,7 @@ A ComfyUI custom node that allows you to download models and other assets used i
 - Visual progress indicator during downloads
 - Embed download nodes directly in your workflows to ensure dependencies are available
 
-[![](/examples/workflow.webp)](./examples/hidream-dev-face.png)
+[![](./examples/workflow.webp)](./examples/workflow.webp)
 
 ## Installation
 
