@@ -5,14 +5,10 @@ import shutil
 import hashlib
 from tqdm import tqdm
 from server import PromptServer
-
-def models_dir():
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    base_dir = os.path.dirname(os.path.dirname(os.path.dirname(current_dir)))
-    return os.path.join(base_dir, 'models')
+from folder_paths import models_dir
 
 def model_folders():
-    return immediate_folders(models_dir())
+    return immediate_folders(models_dir)
 
 def immediate_folders(directory_path):
     """
@@ -22,13 +18,13 @@ def immediate_folders(directory_path):
     for d in os.listdir(directory_path):
         if os.path.isdir(os.path.join(directory_path, d)):
             name = os.path.basename(d)
-            if name.startswith('.') or len(name) > 30:
+            if name.startswith('.'):
                 continue
             folders.append(d)
             for sd in os.listdir(os.path.join(directory_path, d)):
                 if os.path.isdir(os.path.join(directory_path, d, sd)):
                     name = os.path.basename(sd)
-                    if name.startswith('.') or len(name) > 30:
+                    if name.startswith('.'):
                         continue
                     folders.append(os.path.join(d, sd))
     return folders
@@ -64,9 +60,18 @@ class AssetDownloader:
         if not url or not save_to or not filename:
             print(f"AssetDownloader: Missing required values: url='{url}', save_to='{save_to}', filename='{filename}'")
             return ()
+            
+        # Sanitize save_to to ensure it's within models_dir
+        safe_save_to = os.path.normpath(os.path.join(models_dir, save_to))
+        if not safe_save_to.startswith(models_dir):
+            print(f"AssetDownloader: Invalid save_to path. Must be within {models_dir}")
+            return ()
+        save_to = os.path.relpath(safe_save_to, models_dir)
+
+        print(f"AssetDownloader: Downloading {url} to {save_to}/{filename} {'with token' if token else ''}")
 
         relative_path = os.path.join(save_to, filename)
-        save_path = os.path.join(models_dir(), relative_path)
+        save_path = os.path.join(models_dir, relative_path)
         if os.path.exists(save_path):
             print(f"AssetDownloader: File already exists: {relative_path}")
             return ()
@@ -120,4 +125,3 @@ class AssetDownloader:
             raise e
 
         return ()
-    
