@@ -9,6 +9,6 @@ Repository = "https://github.com/ServiceStack/comfy-asset-downloader"
 #  Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]
-PublisherId = "ServiceStack"
+PublisherId = "servicestack"
 DisplayName = "comfy-asset-downloader"
 Icon = ""
