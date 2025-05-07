@@ -62,7 +62,7 @@ __(Drag image to ComfyUI)__
 - [flux1-schnell-cyborg.json](./examples/flux1-schnell-cyborg.json): A workflow using the **FLUX.1-schnell** model from Hugging Face (requires HF_TOKEN)
 - [epiCRealismXL-sparrow.json](./examples/epiCRealismXL-sparrow.json): A workflow that downloads the [epiCRealism XL](https://civitai.com/models/277058?modelVersionId=1522905) model from CivitAI (requires CivitAI token) for realistic image generation.
 - [dreamshaperXL-forest-woman.json](./examples/dreamshaperXL-forest-woman.json): A workflow using [DreamShaper XL](https://civitai.com/models/112902/dreamshaper-xl) from CivitAI
-- [jibMixRealisticXL-hamster.json](jibMixRealisticXL-hamster.json): A workflow that uses [Jib Mix Realistic XL](https://civitai.com/models/194768/jib-mix-realistic-xl) from CivitAI
+- [jibMixRealisticXL-hamster.json](./examples/jibMixRealisticXL-hamster.json): A workflow that uses [Jib Mix Realistic XL](https://civitai.com/models/194768/jib-mix-realistic-xl) from CivitAI
 - [sdxl_lightning-enchantress.json](./examples/sdxl_lightning-enchantress.json): A workflow that downloads **SDXL-Lightning** from Hugging Face for fast image generation using SDXL.
 - [sd3.5_large_fp8-spider.json](./examples/sd3.5_large_fp8-spider.json): A workflow that downloads **Stable Diffusion 3.5 Large FP8** model from Hugging Face for a more resource efficient high quality SD 3.5 Large image generation
 
