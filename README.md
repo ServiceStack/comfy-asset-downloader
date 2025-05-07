@@ -10,6 +10,8 @@ A ComfyUI custom node that allows you to download models and other assets used i
 - Visual progress indicator during downloads
 - Embed download nodes directly in your workflows to ensure dependencies are available
 
+[![](/examples/workflow.webp)](./examples/hidream-dev-face.png)
+
 ## Installation
 
 ```bash
@@ -38,8 +40,6 @@ The Asset Downloader node provides a simple interface:
 For ease of use and security the **token** can be prefixed with `$` to use an environment variable (e.g. `$HF_TOKEN` or `$CIVITAI_TOKEN`) for the token available to the ComfyUI instance.
 
 This will use the value of the `HF_TOKEN` environment variable if it exists.
-
-[![](/examples/workflow.webp)](./examples/hidream-dev-face.png)
 
 ### Usage
 
