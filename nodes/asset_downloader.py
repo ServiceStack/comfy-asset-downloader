@@ -111,6 +111,7 @@ class AssetDownloader:
                                 })
 
             shutil.move(temp_path, save_path)
+            print(f"Complete! {filename} saved to {save_path}")
             return save_path
 
         except Exception as e:
