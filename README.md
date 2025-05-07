@@ -49,9 +49,9 @@ This will use the value of the `HF_TOKEN` environment variable if it exists.
 4. Set the filename (e.g., `the_model.safetensors`)
 5. Run the workflow - the file will be downloaded if it doesn't already exist
 
-## Example Workflows
+## Example ComfyUI Workflows
 
-Check out the example workflows in the `examples` folder:
+Check out the example workflows containing asset dependencies in the `examples` folder:
 
 ![](./examples/hidream-dev-face.png)
 
