@@ -1,6 +1,6 @@
 # ComfyUI Asset Downloader
 
-A ComfyUI custom node that allows you to download models and other assets from external sources like Hugging Face and CivitAI directly within your workflows.
+A ComfyUI custom node that allows you to download models and other assets used in ComfyUI workflows from external sources like Hugging Face and CivitAI directly within your workflows to make it easier to share workflows and save time finding and downloading all the assets needed.
 
 ## Features
 
@@ -13,15 +13,12 @@ A ComfyUI custom node that allows you to download models and other assets from e
 ## Installation
 
 ```bash
-cd ComfyUI/custom_nodes/
-git clone https://github.com/ServiceStack/comfy-asset-downloader
-cd comfy-asset-downloader
-pip install -r requirements.txt
+git clone https://github.com/ServiceStack/comfy-asset-downloader ComfyUI/custom_nodes/comfy-asset-downloader
 ```
 
 Restart ComfyUI after installation.
 
-## Usage
+## Description
 
 The Asset Downloader node provides a simple interface:
 
@@ -33,6 +30,8 @@ The Asset Downloader node provides a simple interface:
 For ease of use and security the **token** can be prefixed with `$` to use an environment variable (e.g. `$HF_TOKEN` or `$CIVITAI_TOKEN`) for the token available to the ComfyUI instance.
 
 This will use the value of the `HF_TOKEN` environment variable if it exists.
+
+[![](/examples/workflow.webp)](./examples/hidream-dev-face.png)
 
 ### Usage
 
@@ -48,11 +47,17 @@ Check out the example workflows in the `examples` folder:
 
 ![](./examples/hidream-dev-face.png)
 
-- `hidream-dev-face.json`: ComfyUI workflow that downloads and uses the leading OSS **HiDream-I1 Dev** model for high quality image generation.
-- `hidream-fast-crystalball.json`: A workflow that downloads and uses the fast version of **HiDream-I1 Fast** model
-- `flux1-schnell-cyborg.json`: A workflow using the **FLUX.1-schnell** model from Hugging Face (requires HF token)
-- `epiCRealismXL-sparrow.json`: A workflow that downloads the [epiCRealism XL](https://civitai.com/models/277058?modelVersionId=1522905) model from CivitAI (requires CivitAI token) for realistic image generation.
-- `dreamshaperXL-forest-woman.json`: A workflow using [DreamShaper XL](https://civitai.com/models/112902/dreamshaper-xl) from CivitAI
-- `jibMixRealisticXL-hamster.json`: A workflow that uses [Jib Mix Realistic XL](https://civitai.com/models/194768/jib-mix-realistic-xl) from CivitAI
-- `sdxl_lightning-enchantress.json`: A workflow that downloads **SDXL-Lightning** from Hugging Face for fast image generation using SDXL.
-- `sd3.5_large_fp8-spider.json`: A workflow that downloads **Stable Diffusion 3.5 Large FP8** model from Hugging Face for a more resource efficient high quality SD 3.5 Large image generation
+__(Drag image to ComfyUI)__
+
+- [hidream-dev-face.json](./examples/hidream-dev-face.json): ComfyUI workflow that downloads and uses the leading OSS **HiDream-I1 Dev** model for high quality image generation.
+- [hidream-fast-crystalball.json](./examples/hidream-fast-crystalball.json): A workflow that downloads and uses the fast version of **HiDream-I1 Fast** model
+- [flux1-schnell-cyborg.json](./examples/flux1-schnell-cyborg.json): A workflow using the **FLUX.1-schnell** model from Hugging Face (requires HF token)
+- [epiCRealismXL-sparrow.json](./examples/epiCRealismXL-sparrow.json): A workflow that downloads the [epiCRealism XL](https://civitai.com/models/277058?modelVersionId=1522905) model from CivitAI (requires CivitAI token) for realistic image generation.
+- [dreamshaperXL-forest-woman.json](./examples/dreamshaperXL-forest-woman.json): A workflow using [DreamShaper XL](https://civitai.com/models/112902/dreamshaper-xl) from CivitAI
+- [jibMixRealisticXL-hamster.json](jibMixRealisticXL-hamster.json): A workflow that uses [Jib Mix Realistic XL](https://civitai.com/models/194768/jib-mix-realistic-xl) from CivitAI
+- [sdxl_lightning-enchantress.json](./examples/sdxl_lightning-enchantress.json): A workflow that downloads **SDXL-Lightning** from Hugging Face for fast image generation using SDXL.
+- [sd3.5_large_fp8-spider.json](./examples/sd3.5_large_fp8-spider.json): A workflow that downloads **Stable Diffusion 3.5 Large FP8** model from Hugging Face for a more resource efficient high quality SD 3.5 Large image generation
+
+## Credits
+
+ - [comfyui-model-downloader](https://github.com/ciri/comfyui-model-downloader)
