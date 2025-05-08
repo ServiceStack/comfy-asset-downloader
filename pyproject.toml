@@ -1,7 +1,7 @@
 [project]
 name = "comfy-asset-downloader"
 description = "This node allows downloading models and other resources used within a ComfyUI workflow making it easier to resolve referenced assets and share workflows"
-version = "0.2"
+version = "0.3"
 license = {file = "LICENSE"}
 
 [project.urls]

@@ -68,8 +68,6 @@ class AssetDownloader:
             return ()
         save_to = os.path.relpath(safe_save_to, models_dir)
 
-        print(f"AssetDownloader: Downloading {url} to {save_to}/{filename} {'with token' if token else ''}")
-
         relative_path = os.path.join(save_to, filename)
         save_path = os.path.join(models_dir, relative_path)
         if os.path.exists(save_path):
