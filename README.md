@@ -74,6 +74,8 @@ __(Drag image to ComfyUI)__
 - [jibMixRealisticXL-hamster.json](./examples/jibMixRealisticXL-hamster.json): A workflow that uses [Jib Mix Realistic XL](https://civitai.com/models/194768/jib-mix-realistic-xl) from CivitAI
 - [sdxl_lightning-enchantress.json](./examples/sdxl_lightning-enchantress.json): A workflow that downloads **SDXL-Lightning** from Hugging Face for fast image generation using SDXL.
 - [sd3.5_large_fp8-spider.json](./examples/sd3.5_large_fp8-spider.json): A workflow that downloads **Stable Diffusion 3.5 Large FP8** model from Hugging Face for a more resource efficient high quality SD 3.5 Large image generation
+- [wan-image-to-video.json](./examples/wan-image-to-video.json.json): A workflow that downloads **Wan2.1** text-to-video model from Hugging Face for generative videos from an initial image and text prompt.
+
 
 ## Credits
 
