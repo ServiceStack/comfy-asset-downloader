@@ -152,49 +152,6 @@
       ]
     },
     {
-      "id": 7,
-      "type": "CLIPTextEncode",
-      "pos": [
-        413,
-        389
-      ],
-      "size": [
-        425.27801513671875,
-        180.6060791015625
-      ],
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 75
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "slot_index": 0,
-          "links": [
-            98
-          ]
-        }
-      ],
-      "title": "CLIP Text Encode (Negative Prompt)",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.30",
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "色调艳丽，过曝，静态，细节模糊不清，字幕，风格，作品，画作，画面，静止，整体发灰，最差质量，低质量，JPEG压缩残留，丑陋的，残缺的，多余的手指，画得不好的手部，画得不好的脸部，畸形的，毁容的，形态畸形的肢体，手指融合，静止不动的画面，杂乱的背景，三条腿，背景人很多，倒着走"
-      ],
-      "color": "#322",
-      "bgcolor": "#533"
-    },
-    {
       "id": 50,
       "type": "WanImageToVideo",
       "pos": [
@@ -327,7 +284,7 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        117704270511261,
+        1043061006049488,
         "randomize",
         20,
         6,
@@ -562,35 +519,6 @@
       ]
     },
     {
-      "id": 55,
-      "type": "AssetDownloader",
-      "pos": [
-        64.27653503417969,
-        412.86444091796875
-      ],
-      "size": [
-        294.1608581542969,
-        130
-      ],
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [],
-      "properties": {
-        "cnr_id": "comfy-asset-downloader",
-        "ver": "78bee0e18db8917c5ea0ebddb592e13d3caa5472",
-        "Node name for S&R": "AssetDownloader",
-        "aux_id": "ServiceStack/comfy-asset-downloader"
-      },
-      "widgets_values": [
-        "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
-        "clip",
-        "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
-        ""
-      ]
-    },
-    {
       "id": 38,
       "type": "CLIPLoader",
       "pos": [
@@ -602,7 +530,7 @@
         106
       ],
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -639,7 +567,7 @@
         130
       ],
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -711,7 +639,7 @@
         130
       ],
       "flags": {},
-      "order": 8,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [],
@@ -725,6 +653,78 @@
         "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/diffusion_models/wan2.1_i2v_480p_14B_fp16.safetensors",
         "diffusion_models",
         "wan2.1_i2v_480p_14B_fp16.safetensors",
+        ""
+      ]
+    },
+    {
+      "id": 7,
+      "type": "CLIPTextEncode",
+      "pos": [
+        413,
+        389
+      ],
+      "size": [
+        425.27801513671875,
+        180.6060791015625
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 75
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "slot_index": 0,
+          "links": [
+            98
+          ]
+        }
+      ],
+      "title": "CLIP Text Encode (Negative Prompt)",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.30",
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "bright colors, overexposed, static, blurred details, subtitles, style, artwork, painting, picture, still, overall gray, worst quality, low quality, JPEG compression residue, ugly, incomplete, extra fingers, poorly drawn hands, poorly drawn faces, deformed, disfigured, malformed limbs, fused fingers, still picture, cluttered background, three legs, many people in the background, walking backwards"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 55,
+      "type": "AssetDownloader",
+      "pos": [
+        64.27653503417969,
+        412.86444091796875
+      ],
+      "size": [
+        294.1608581542969,
+        130
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-asset-downloader",
+        "ver": "78bee0e18db8917c5ea0ebddb592e13d3caa5472",
+        "Node name for S&R": "AssetDownloader",
+        "aux_id": "ServiceStack/comfy-asset-downloader"
+      },
+      "widgets_values": [
+        "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "text_encoders",
+        "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
         ""
       ]
     }
@@ -895,8 +895,8 @@
     "ds": {
       "scale": 1.2284597357367768,
       "offset": [
-        299.14736712925094,
-        115.10858926092027
+        127.22499890886877,
+        12.866606851886118
       ]
     },
     "frontendVersion": "1.17.11"
