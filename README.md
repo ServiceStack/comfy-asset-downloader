@@ -66,15 +66,31 @@ Check out the example workflows containing asset dependencies in the `examples` 
 
 __(Drag image to ComfyUI)__
 
-- [hidream-dev-face.json](./examples/hidream-dev-face.json): ComfyUI workflow that downloads and uses the leading OSS **HiDream-I1 Dev** model for high quality image generation.
+### HiDream
+
+- [hidream-dev-face.json](./examples/hidream-dev-face.json): ComfyUI workflow that downloads and uses the leading OSS **HiDream-I1 Dev** model for high quality image generation
 - [hidream-fast-crystalball.json](./examples/hidream-fast-crystalball.json): A workflow that downloads and uses the fast version of **HiDream-I1 Fast** model
+
+### Flux
+
 - [flux1-schnell-cyborg.json](./examples/flux1-schnell-cyborg.json): A workflow using the **FLUX.1-schnell** model from Hugging Face (requires HF_TOKEN)
-- [epiCRealismXL-sparrow.json](./examples/epiCRealismXL-sparrow.json): A workflow that downloads the [epiCRealism XL](https://civitai.com/models/277058?modelVersionId=1522905) model from CivitAI (requires CivitAI token) for realistic image generation.
+
+### Stable Diffusion
+
+- [sdxl_lightning-enchantress.json](./examples/sdxl_lightning-enchantress.json): A workflow that downloads **SDXL-Lightning** from Hugging Face for fast image generation using SDXL
+- [sdxl_base_refiner-bottle.json](./examples/sdxl_base_refiner-bottle.json): A workflow that downloads **SDXL Base** and **SD XL Refiner** from Hugging Face for an image generation example using a base model with a refiner
+- [sdxl_turbo1-fox.json](./examples/sdxl_turbo1-fox.json): A workflow that downloads **SDXL Turbo v1.0** from Hugging Face for basic image 512x512 generation
+- [sd3.5_large_fp8-spider.json](./examples/sd3.5_large_fp8-spider.json): A workflow that downloads **Stable Diffusion 3.5 Large FP8** model from Hugging Face for a more resource efficient high quality SD 3.5 Large image generation
+
+### CivitAI (requires CIVITAI_TOKEN)
+
+- [epiCRealismXL-sparrow.json](./examples/epiCRealismXL-sparrow.json): A workflow that downloads the [epiCRealism XL](https://civitai.com/models/277058?modelVersionId=1522905) model from CivitAI
 - [dreamshaperXL-forest-woman.json](./examples/dreamshaperXL-forest-woman.json): A workflow using [DreamShaper XL](https://civitai.com/models/112902/dreamshaper-xl) from CivitAI
 - [jibMixRealisticXL-hamster.json](./examples/jibMixRealisticXL-hamster.json): A workflow that uses [Jib Mix Realistic XL](https://civitai.com/models/194768/jib-mix-realistic-xl) from CivitAI
-- [sdxl_lightning-enchantress.json](./examples/sdxl_lightning-enchantress.json): A workflow that downloads **SDXL-Lightning** from Hugging Face for fast image generation using SDXL.
-- [sd3.5_large_fp8-spider.json](./examples/sd3.5_large_fp8-spider.json): A workflow that downloads **Stable Diffusion 3.5 Large FP8** model from Hugging Face for a more resource efficient high quality SD 3.5 Large image generation
-- [wan-image-to-video.json](./examples/wan-image-to-video.json.json): A workflow that downloads **Wan2.1** text-to-video model from Hugging Face for generative videos from an initial image and text prompt.
+
+### Wan
+
+- [wan-image-to-video.json](./examples/wan-image-to-video.json.json): A workflow that downloads **Wan2.1** text-to-video model from Hugging Face for generating videos from an initial image and text prompt
 
 
 ## Credits
