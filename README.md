@@ -16,7 +16,7 @@ A ComfyUI custom node that allows you to download models and other assets used i
 
 ### Using ComfyUI Manager
 
-Search and install `Comfy Asset Downloader` from [ComfyUI's Manager](https://github.com/Comfy-Org/ComfyUI-Manager) **Custom Nodes Manager**
+Search and install **Comfy Asset Downloader** from [ComfyUI's Manager](https://github.com/Comfy-Org/ComfyUI-Manager) **Custom Nodes Manager**.
 
 ### Using Git
 
