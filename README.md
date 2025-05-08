@@ -14,9 +14,18 @@ A ComfyUI custom node that allows you to download models and other assets used i
 
 ## Installation
 
+### Using ComfyUI Manager
+
+Search and install `Comfy Asset Downloader` from [ComfyUI's Manager](https://github.com/Comfy-Org/ComfyUI-Manager) **Custom Nodes Manager**
+
+### Using Git
+
 ```bash
-git clone https://github.com/ServiceStack/comfy-asset-downloader ComfyUI/custom_nodes/comfy-asset-downloader
+git clone https://github.com/ServiceStack/comfy-asset-downloader \
+    ComfyUI/custom_nodes/comfy-asset-downloader
 ```
+
+### Configure Environment Variables (Optional)
 
 To download models and resources from CivitAI or protected Hugging Face repositories we recommend your ComfyUI
 instance has these environment variables (e.g. by adding to `~/.profile`):

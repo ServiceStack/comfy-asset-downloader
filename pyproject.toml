@@ -10,5 +10,5 @@ Repository = "https://github.com/ServiceStack/comfy-asset-downloader"
 
 [tool.comfy]
 PublisherId = "servicestack"
-DisplayName = "comfy-asset-downloader"
+DisplayName = "Comfy Asset Downloader"
 Icon = ""
