@@ -1,4 +1,4 @@
-# ComfyUI Asset Downloader
+# Comfy Asset Downloader
 
 A ComfyUI custom node that allows you to download models and other assets used in ComfyUI workflows from external sources like Hugging Face and CivitAI directly within your workflows to make it easier to share workflows and save time finding and downloading all the assets needed.
 
