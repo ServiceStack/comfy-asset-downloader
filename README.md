@@ -79,6 +79,7 @@ __(Drag image to ComfyUI)__
 
 - [sdxl_lightning-enchantress.json](./examples/sdxl_lightning-enchantress.json): A workflow that downloads **SDXL-Lightning** from Hugging Face for fast image generation using SDXL
 - [sdxl_base_refiner-bottle.json](./examples/sdxl_base_refiner-bottle.json): A workflow that downloads **SDXL Base** and **SD XL Refiner** from Hugging Face for an image generation example using a base model with a refiner
+- [sdxl-base_refiner_sytan-tiger.json](./examples/sdxl-base_refiner_sytan-tiger.json): A more complex **SDXL Base** and **SD XL Refiner** workflow from [@SytanSD](https://github.com/SytanSD/Sytan-SDXL-ComfyUI)
 - [sdxl_turbo1-fox.json](./examples/sdxl_turbo1-fox.json): A workflow that downloads **SDXL Turbo v1.0** from Hugging Face for basic image 512x512 generation
 - [sd3.5_large_fp8-spider.json](./examples/sd3.5_large_fp8-spider.json): A workflow that downloads **Stable Diffusion 3.5 Large FP8** model from Hugging Face for a more resource efficient high quality SD 3.5 Large image generation
 
