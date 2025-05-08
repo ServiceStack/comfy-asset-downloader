@@ -88,6 +88,7 @@ __(Drag image to ComfyUI)__
 - [epiCRealismXL-sparrow.json](./examples/epiCRealismXL-sparrow.json): A workflow that downloads the [epiCRealism XL](https://civitai.com/models/277058?modelVersionId=1522905) model from CivitAI
 - [dreamshaperXL-forest-woman.json](./examples/dreamshaperXL-forest-woman.json): A workflow using [DreamShaper XL](https://civitai.com/models/112902/dreamshaper-xl) from CivitAI
 - [jibMixRealisticXL-hamster.json](./examples/jibMixRealisticXL-hamster.json): A workflow that uses [Jib Mix Realistic XL](https://civitai.com/models/194768/jib-mix-realistic-xl) from CivitAI
+- [CheyenneXL-samurai.json](./examples/CheyenneXL-samurai.json): A workflow that uses [CHEYENNE v2.2 (VAE Baked)](https://civitai.com/models/198051/cheyenne) from CivitAI
 
 ### Wan
 
